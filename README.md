@@ -2,6 +2,9 @@
 
 Este projeto implementa testes automatizados utilizando a metodologia BDD (Behavior Driven Development) com Cypress, Cucumber e Gherkin. O objetivo é garantir a qualidade do software através de testes que simulam o comportamento real do usuário, descritos em uma linguagem natural e compreensível.
 
+### Link do video
+https://drive.google.com/file/d/1TzU7q63_IeEBaljMSPLlfH48m7qGRYI-/view?usp=sharing
+
 ## Sobre o Projeto
 
 Este projeto foi desenvolvido utilizando três tecnologias principais:
