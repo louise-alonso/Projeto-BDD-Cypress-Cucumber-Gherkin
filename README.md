@@ -1,10 +1,14 @@
-# Projeto de Testes com Cypress
+# Projeto de Testes com Cypress, Cucumber e Gherkin
 
-Este projeto contém testes automatizados utilizando o framework Cypress para testes end-to-end. O objetivo principal é garantir a qualidade e confiabilidade da aplicação através de testes automatizados que simulam o comportamento real do usuário.
+Este projeto implementa testes automatizados utilizando a metodologia BDD (Behavior Driven Development) com Cypress, Cucumber e Gherkin. O objetivo é garantir a qualidade do software através de testes que simulam o comportamento real do usuário, descritos em uma linguagem natural e compreensível.
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido para implementar testes automatizados utilizando Cypress, um framework moderno e poderoso para testes end-to-end. Os testes são escritos em JavaScript/TypeScript e seguem as melhores práticas de automação de testes.
+Este projeto foi desenvolvido utilizando três tecnologias principais:
+
+1. **Cypress**: Framework moderno para automação de testes end-to-end
+2. **Cucumber**: Ferramenta que implementa a metodologia BDD
+3. **Gherkin**: Linguagem de especificação que permite escrever testes em formato legível
 
 ### Principais Funcionalidades
 - Testes automatizados de interface do usuário
@@ -12,6 +16,7 @@ Este projeto foi desenvolvido para implementar testes automatizados utilizando C
 - Testes de regressão
 - Relatórios de execução de testes
 - Integração com CI/CD
+- Documentação viva através dos cenários de teste
 
 ## Colaboradores
 
@@ -19,7 +24,6 @@ Este projeto foi desenvolvido para implementar testes automatizados utilizando C
 - Maria Fernanda Lima Nogueira
 - Calvin Almeida
 - Tarcyla Kauanne
-
 
 ## Pré-requisitos
 
@@ -30,7 +34,7 @@ Este projeto foi desenvolvido para implementar testes automatizados utilizando C
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/louise-alonso/Projeto-BDD-Cypress-Cucumber-Gherkin
+git clone https://github.com/louise-alonso/Projeto-BDD-Cypress-Cucumber-Gherkin.git
 ```
 
 2. Instale as dependências:
@@ -56,18 +60,37 @@ npx cypress run
 
 ```
 cypress/
-├── e2e/          # Testes end-to-end
-├── fixtures/     # Dados de teste
-├── support/      # Arquivos de suporte
-└── downloads/    # Arquivos baixados durante os testes
+├── e2e/
+│   ├── features/    # Arquivos .feature com os cenários em Gherkin
+│   └── steps/       # Implementação dos passos dos testes
+├── fixtures/        # Dados de teste
+├── support/         # Arquivos de suporte
+└── reports/         # Relatórios de execução
+    ├── cucumber-html/
+    └── cucumber-ndjson/
 ```
 
 ## Tecnologias Utilizadas
 
-- Cypress
+- Cypress (Framework de automação)
+- Cucumber (Framework BDD)
+- Gherkin (Linguagem de especificação)
 - JavaScript/TypeScript
 - Node.js
 - npm/yarn
+
+## Exemplo de Cenário de Teste
+
+```gherkin
+Feature: Funcionalidade de Login
+
+  Scenario: Login bem-sucedido com credenciais válidas
+    Given que estou na página de login
+    When eu insiro o usuário "standard_user"
+    And eu insiro a senha "secret_sauce"
+    And eu clico no botão de login
+    Then eu devo ser redirecionado para a página de inventário
+```
 
 ## Licença
 
