@@ -30,7 +30,7 @@ Este projeto foi desenvolvido para implementar testes automatizados utilizando C
 
 1. Clone o repositório:
 ```bash
-git clone [https://github.com/louise-alonso/Projeto-BDD-Cypress-Cucumber-Gherkin]
+git clone https://github.com/louise-alonso/Projeto-BDD-Cypress-Cucumber-Gherkin
 ```
 
 2. Instale as dependências:
