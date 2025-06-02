@@ -79,19 +79,6 @@ cypress/
 - Node.js
 - npm/yarn
 
-## Exemplo de Cenário de Teste
-
-```gherkin
-Feature: Funcionalidade de Login
-
-  Scenario: Login bem-sucedido com credenciais válidas
-    Given que estou na página de login
-    When eu insiro o usuário "standard_user"
-    And eu insiro a senha "secret_sauce"
-    And eu clico no botão de login
-    Then eu devo ser redirecionado para a página de inventário
-```
-
 ## Licença
 
 Este projeto está sob a licença MIT. 
